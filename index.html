@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+          <div class="container">
+                   <div class="image">
+                    <img src="./image/winebottle.png" alt="">
+                   </div>
+                    <p>insanity</p>
+          </div>
+
+          <script>
+                    var moveTheText = document.querySelector('p')
+
+                    window.onmousemove = (e)=>{
+                              console.log(e)
+
+                              var x = e.clientX
+                              var y = e.clientY
+
+                              moveTheText.style.top = (y+20) + 'px'
+                              moveTheText.style.left = (x+20) + 'px'
+                    }
+          </script>
+</body>
+</html>
